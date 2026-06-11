@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>L.A | Calculadora</title>
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- título -->
+        <h1>Calculadora</h1>
+        <!-- display -->
+        <input class="visor" type="text" name="display" id="display"  placeholder="0" disabled>
+        <!-- botões -->
+        <div class="box-btn">
+            
+            <button class="btn  destaque" onclick="cleanResult()">C</button>
+            <button class="btn destaque" id="arrow" onclick="deleteLastValue()"><i class="bi bi-arrow-left-short"></i></button>
+            <button class="btn destaque" onclick="addDisplay('%')">%</button>
+            <button class="btn destaque" id="divisão" onclick="addDisplay('/')">÷</button>
+            
+            <button class="btn" onclick="addDisplay('7')">7</button>
+            <button class="btn" onclick="addDisplay('8')">8</button>
+            <button class="btn" onclick="addDisplay('9')">9</button>
+            <button class="btn destaque" onclick="addDisplay('*')">x</button>
+            
+            <button class="btn" onclick="addDisplay('4')">4</button>
+            <button class="btn" onclick="addDisplay('5')">5</button>
+            <button class="btn" onclick="addDisplay('6')">6</button>
+            <button class="btn destaque" id="subtracao" onclick="addDisplay('-')">-</button>
+            
+            <button class="btn" onclick="addDisplay('1')">1</button>
+            <button class="btn" onclick="addDisplay('2')">2</button>
+            <button class="btn" onclick="addDisplay('3')">3</button>
+            <button class="btn destaque" id="adicao" onclick="addDisplay('+')">+</button>
+            
+            <button class="btn" onclick="addDisplay('0')">0</button>
+            <button class="btn" onclick="addDisplay('.')">,</button>
+            <button class="btn destaque-fundo" onclick="calculateResult()">=</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
