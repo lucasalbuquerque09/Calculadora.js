@@ -36,7 +36,6 @@ body {
 /* estilos da calculadora */
 .wrapper {
     width: min(100%, 430px);
-    height: min(100%, 550px);
     height: auto;
     background-color: var(--corFundoCalculadora);
     display: flex;
@@ -93,7 +92,7 @@ body {
     border-radius: 20px;
     color: var(--corValor);
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     cursor: pointer;
 }
@@ -106,7 +105,9 @@ button {
     -webkit-tap-highlight-color: transparent;
 }
 
-.destaque-fundo {
+.destaque-fundo,
+#span {
+    color: var(--corValor);
     grid-column: span 2;
     background-color: var(--corDestaque);
     border-radius: 20px;

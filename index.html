@@ -20,9 +20,8 @@
         <!-- botões -->
         <div class="box-btn">
             
-            <button class="btn  destaque" onclick="cleanResult()">C</button>
+            <button class="btn  destaque" id="span" onclick="cleanResult()">C</button>
             <button class="btn destaque" onclick="deleteLastValue()"><i class="bi bi-arrow-left-short"></i></button>
-            <button class="btn destaque" onclick="addDisplay('%')">%</button>
             <button class="btn destaque" onclick="addDisplay('/')">÷</button>
             
             <button class="btn" onclick="addDisplay('7')">7</button>
@@ -40,9 +39,9 @@
             <button class="btn" onclick="addDisplay('3')">3</button>
             <button class="btn destaque" onclick="addDisplay('+')">+</button>
             
-            <button class="btn" onclick="addDisplay('0')">0</button>
+            <button class="btn"  onclick="addDisplay('0')">0</button>
             <button class="btn" onclick="addDisplay('.')">,</button>
-            <button class="btn destaque-fundo" onclick="calculateResult()">=</button>
+            <button class="btn" id="span" onclick="calculateResult()">=</button>
 
         </div>
     </div>
